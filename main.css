@@ -1,0 +1,58 @@
+
+
+body {
+    font-family: 'Inter:Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.15em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+p{
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.4;
+}
+a{
+    color: rgb(106, 214, 173);
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(155, 221, 238);
+}
+.spacer{
+    padding: 2.5vh;
+}
+.project-box{
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+.header{
+    padding: 5vh 10vw;
+    max-width: 28em;
+}
+.header-centered{
+    margin: auto;
+    padding: 10vh 10vw;
+    max-width: 50em;
+}
+.projects{
+    padding: 5vh 10vw;
+    max-width: 50em;
+}
+.centered{
+    margin: auto;
+    padding: 10vh 10vh;
+    max-width: 35em;
+}
+ul{
+    list-style-type:"- ";
+    line-height: 1.7;
+}
+li{
+    font-weight:100;
+}
