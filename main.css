@@ -38,6 +38,7 @@ a:hover{
 .header-centered{
     margin: auto;
     padding: 10vh 10vw;
+    padding-bottom: 2vh;
     max-width: 50em;
 }
 .projects{
@@ -46,7 +47,7 @@ a:hover{
 }
 .centered{
     margin: auto;
-    padding: 10vh 10vh;
+    padding: 5vh 5vw;
     max-width: 35em;
 }
 ul{
@@ -55,4 +56,28 @@ ul{
 }
 li{
     font-weight:100;
+}
+.cover_img{
+    margin: auto;
+    padding-top: 5vh;
+    overflow: hidden;
+}
+img {
+    object-fit: contain;
+    max-height: inherit;
+    max-width: inherit;
+}
+.portrait{
+    padding-left: 10vw;
+    overflow: -moz-hidden-unscrollable;
+}
+.portrait_img{
+    max-width: 250px;
+    margin:auto;
+    border-radius: 50%;
+}
+.banner{
+    object-fit: none;
+    max-height: 750px;
+    overflow: hidden;
 }
