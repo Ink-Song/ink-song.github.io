@@ -81,3 +81,18 @@ img {
     max-height: 750px;
     overflow: hidden;
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vh 5vw;
+}
+.box_grid{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 2em;
+}
+.img_grid{
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
