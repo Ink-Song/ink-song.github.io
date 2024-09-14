@@ -5,70 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunruh - E-Portfolio</title>
     <link rel="stylesheet"
-        href = "https://fonts.googleapis.com/css?family=Inter">
+        href = "https://fonts.googleapis.com/css?family=IBM Plex Sans">
+        <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=IBM Plex Mono">
     <link rel="stylesheet"
-        href = "main.css">
+        href = "alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
 
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="navbar" id="topnav">
+        <div class="navbar_container">
+            <a class="active" href="/index.html">Home</a>
+            <a href="/projects_school.html">School Projects</a>
+            <a href="/projects_personal.html">Personal Projects</a>
+            <a href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+ 
+    </div>
+    <div class="header2">
         <h1>Hi!</h1>
-        <p style="font-weight: 500; font-size: 1.5em">My name is <a href="/about_me.html">Sasha.</a></p>
-        <p>
-            I am a first year student in Computer Engineering (BIDATA) at NTNU.
-         On this website you'll find an overview of the projects and assignments I've completed over the last couple of years, the projects I'm working on right now, and perhaps some projects I'm looking forward to working on in the future. For the time being, I intend to make as much of my work available here as possible.
+        <p class="sub_title" style=" font-size: 2em">My name is <a href="/about_me.html">Sasha.</a></p>
+        <p class="main_text">
+            I'm a first year Computer Engineering student at NTNU. On this website you'll find an overview of projects I've completed during my studies, as well as a handful of personal projects and interests that I partake in during my spare time.
         </p>
-        <p>
-            Outside of School and Programming, I enjoy spending my time with my girlfriend, climbing, 3D modelling, making music, and writing. <a href="/goals.html">On this page</a> you can find an overview of personal projects I'll be taking on in my spare time.
-        </p>
+        <p style="padding-top: 2vh;">Links:</p>
+        <p style="font-family: 'IBM Plex Mono'; font-size: smaller; margin-left: 1vw;">email: notarealemailyet@random.string</p>
+        <p style="font-family: 'IBM Plex Mono'; font-size: smaller; margin-left: 1vw;">github: thiswillbeaurl.notyet</p>
+        <div class="spacer">
+            
+        </div>
     </div>
-    <div class="portrait">
-        <img class="portrait_img" src="img/selfi-smaller.jpg">
-    </div>
-    
-    <div class="spacer">
+    <div class="section_one">
+        <div class="content_container_s1">
+            <hr>
+            <p style="font-size: 1.25em;">Current Focuses</p>
+            <ul style="font-family: 'IBM Plex Mono';">
+                <li>[ ] Finish School</li>
+            </ul>
+            <hr>
+        </div>
+
 
     </div>
-    <div class="projects">
-        <h3>Ambitions</h3>
-        <p><strong style="font-weight: 500;">Ideal Work:</strong> Software systems development or UX design.</p>
-        <p><strong style="font-weight: 500;">Dream Fields:</strong> Music Software, 3D Software, Interactive training tools, Video game development, Architectural Visualization</p>
-        <p><strong style="font-weight: 500;">Particular Interests:</strong> Development of in-organization tools, development of user-end tools (user experience).</p>
+    <div class="section_two">
+
     </div>
-    <div class="projects">
-        <h3 style="font-weight: 500;">Some Projects</h3>
-        <div class="project-box">
-            <a href="/lego_mindstorms.html">
-                <p><strong>Lego Mindstorms</strong></p>  
-            </a>
-            <p>School Project - 2024</p>
-            <p>A group project wherein we were tasked with developing various robots using mini-python and an EV3 kit.</p>
-        </div>
-        <div class="project-box">
-            <a href="/progoppgaver.html">
-                <p><strong>Programming Assignments</strong></p>  
-            </a>
-            <p>School Projects - Fall 2024</p>
-            <p>Showcasing some of the projects we've done in the course of the Fall 2024 semester</p>
-        </div>
-        <div class="project-box">
-            <a href="/blender_projects.html">
-                <p><strong>Assorted Blender Projects</strong></p>  
-            </a>
-            <p>Personal Project - 2023</p>
-            <p>Sometimes I like to do 3d modelling projects</p>
-        </div>
-        <div class="project-box">
-            <a href="/vr_proj_2021-2023.html">
-                <p><strong>VR Hazard Investigation Proof of Concept</strong></p>  
-            </a>
-            <p>Personal Project - 2023</p>
-            <p>Showcases the potential use of VR for hazard and safety training.</p>
-        </div>
-    </div>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
     
     
 </body>
