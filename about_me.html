@@ -3,35 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunruh - About Me</title>
+    <title>Sunruh - About Page</title>
     <link rel="stylesheet"
         href = "https://fonts.googleapis.com/css?family=IBM Plex Sans">
+        <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=IBM Plex Mono">
     <link rel="stylesheet"
         href = "alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
 
     </style>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="topnav">
         <div class="navbar_container">
             <a href="/index.html">Home</a>
             <a href="/projects_school.html">School Projects</a>
             <a href="/projects_personal.html">Personal Projects</a>
-            <a href="/about_me.html">About me</a>      
-            </div>
+            <a class="active" href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
-    
-    <div class="banner">
-        <div class="cover_img" style="padding: 0;">
-            <img src="/img/cover.jpg" style="width:100% ; object-fit: contain;">
+ 
+    </div>
+    <div class="header2">
+        <h1>About me</h1>
+        <p class="main_text">
+            
+        </p>
+        <img class="portrait_img" src="/img/selfi-smaller.jpg" alt="">
+    </div>
+    <div class="section_one">
+        <div class="content_container_s1">
+            <hr>
+            <p style="font-size: 1.25em;">Contact Info</p>
+            
+            <hr>
         </div>
+
+
     </div>
-    <div class="centered">
-        <h1 style="margin:auto;text-align: center;">Who am I?</h1>
+    <div class="section_two">
+
     </div>
     
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script> 
 </body>
 </html>
