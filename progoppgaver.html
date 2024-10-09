@@ -3,26 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunruh - Programming Assignments</title>
+    <title>Sunruh - Proggramming Assignments</title>
     <link rel="stylesheet"
-        href = "https://fonts.googleapis.com/css?family=Inter">
+        href = "https://fonts.googleapis.com/css?family=IBM Plex Sans">
+        <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=IBM Plex Mono">
     <link rel="stylesheet"
-        href = "main.css">
+        href = "alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
 
     </style>
 </head>
-<body style="padding: 0%; margin: 0;">
-    <div class="banner">
-        <div class="cover_img" style="padding: 0;">
-            <img src="/img/cover.jpg" style="width:100% ; object-fit: contain;">
+<body>
+    <div class="navbar" id="topnav">
+        <div class="navbar_container">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/projects_school.html">School Projects</a>
+            <a href="/projects_personal.html">Personal Projects</a>
+            <a href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+ 
+    </div>
+    <div class="header-centered">
+        <h1 style="margin:auto;text-align: center;">Programming 1</h1>
+        <div class="cover_img">
+            <img src="img/legomindstorms.jpg" style="width:100% ; object-fit: contain;">
         </div>
     </div>
     <div class="centered">
-        <h1 style="margin:auto;text-align: center;">Hello?</h1>
-        <p style="text-align: center;">This page isn't finished yet. Could you come back later?</p>
+        <p><strong>Gitlab: </strong><a href="https://gitlab.stud.idi.ntnu.no/sashacu/idatt1003-proggrammering-1">Link</a></p>
+        <hr>
+        <p>
+            (Introduce programming course and have headers for each assignment...)
+        </p>
     </div>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
     
     
 </body>

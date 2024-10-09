@@ -9,13 +9,25 @@
     <link rel="stylesheet"
         href = "https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet"
-        href = "main.css">
+        href = "alt.css">
     <style>
         
 
     </style>
 </head>
 <body>
+    <div class="navbar" id="topnav">
+        <div class="navbar_container">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/projects_school.html">School Projects</a>
+            <a href="/projects_personal.html">Personal Projects</a>
+            <a href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+ 
+    </div>
     <div class="header-centered">
         <h1 style="margin:auto;text-align: center;">Lego Mindstorms</h1>
         <div class="cover_img">
@@ -37,6 +49,15 @@
         </p>
     </div>
     
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
 </body>
 </html>
