@@ -73,6 +73,7 @@ img {
 .portrait_img{
     max-width: 250px;
     margin:auto;
+    border-radius: 50%;
 }
 .banner{
     object-fit: none;
@@ -142,8 +143,39 @@ img {
     color: rgb(255, 255, 255);
     font-size: 1em;
 }
-.section_one{
-    
+
+.content_container_about{
+    padding: 5vh 5vw;
+    color: inherit;
+    padding-top: 0%;
+}
+
+.biography{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+.About_Container{
+    max-width: 30em;
+    padding-left: 2vw;
+    margin: auto;
+}
+.cool_blur::before {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url(/svg/yellowblob.svg);
+    background-repeat: no-repeat;
+    filter: blur(35px);
+    content: '';
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.cool_blur h1,.cool_blur p{
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -227,8 +259,8 @@ button{
     color: white;
     margin: 1vh;
     box-shadow: 0.2em;
-    width: 25vh;
-    height: 7vh
+    width: 145px;
+    height: 50px;
 }
 button:hover{
     background-color: white;
