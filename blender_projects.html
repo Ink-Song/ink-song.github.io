@@ -3,25 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunruh - Blender Projects</title>
+    <title>Sunruh - Proggramming Assignments</title>
+    <link rel="icon" type="image/x-icon" href="/ico/testfavicon.png">
+
     <link rel="stylesheet"
         href = "https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=Noto Serif">
     <link rel="stylesheet"
-        href = "main.css">
+        href = "alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
 
     </style>
 </head>
 <body>
-    <div class="header-centered">
-        <h1 style="margin:auto;text-align: center;">Blender Projects</h1>
-        <div class="cover_img">
-            <img src="img/blender_robot.jpg" style="width:100% ; object-fit: contain;">
+    <div class="navbar" id="topnav">
+        <div class="navbar_container">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/projects_school.html">School Projects</a>
+            <a href="/projects_personal.html">Personal Projects</a>
+            <a href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
+ 
     </div>
+    <div class="header-centered">
+        <h1 style="margin:auto;text-align: center;">Three js Test</h1>
+        <div class="spacer"></div>
+        <div class="cover_img">
+            <img src="img/CodeScreenshot.jpg" style="width:100% ; object-fit: contain;">
+        </div>
+        <hr class="subtle_r">
+        <p class="subtlet">Last updated: October 9th 2024</p>
+        <hr class="subtle_r">
+    </div>
+    <div id="container3D"></div>
+
     <div class="centered">
-        <p>In my spare time I'm a 3d Modeller. Below are some examples of projects I've worked on in the past.</p>
+        <p><strong>Gitlab: </strong><a href="https://gitlab.stud.idi.ntnu.no/sashacu/idatt1003-proggrammering-1">Link</a></p>
+        <hr>
+        <p>
+            (Introduce programming course and have headers for each assignment...)
+        </p>
+        <div class="spacer"></div>
+        <hr>
+        <p>Return: <a href="projects_school.html">School Projects</a></p>
+
     </div>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
+    <script type="module" src="javascript/main.js"></script>
+    
+    
 </body>
 </html>

@@ -20,7 +20,18 @@ a{
 }
 a:hover{
     color:#d1770f;
-}.Fullbox{
+}
+.subtlet{
+    font-family: 'Noto Serif';
+    font-size: 0.8em;
+    font-style: oblique;
+    color: #5a5a5a;
+    margin: 2.5px;
+}
+.subtle_r{
+    border-width: 0.5px;
+}
+.Fullbox{
     height: 90vh;
     width: 100%;
 }
@@ -42,7 +53,13 @@ a:hover{
     padding: 10vh 10vw;
     padding-bottom: 2vh;
     max-width: 50em;
+    container-name: articleTitle;
 }
+
+.header-centered h1{
+    font-size: 6cqw;
+}
+
 .projects{
     padding: 5vh 10vw;
     max-width: 50em;
@@ -272,4 +289,12 @@ button{
 button:hover{
     background-color: white;
     color: black;
+}
+
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
