@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunruh - Proggramming Assignments</title>
+    <link rel="icon" type="image/x-icon" href="/ico/testfavicon.png">
+
+    <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet"
+        href = "https://fonts.googleapis.com/css?family=Noto Serif">
+    <link rel="stylesheet"
+        href = "alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar" id="topnav">
+        <div class="navbar_container">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/projects_school.html">School Projects</a>
+            <a href="/projects_personal.html">Personal Projects</a>
+            <a href="/about_me.html">About me</a>      
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+ 
+    </div>
+    <div class="header-centered">
+        <h1 style="margin:auto;text-align: center;">Project "Squirtle"</h1>
+        <div class="spacer"></div>
+        <div class="cover_img">
+            <img src="img/Robot Photo.webp" style="width:100% ; object-fit: contain;">
+        </div>
+        <hr class="subtle_r">
+        <p class="subtlet">Last updated: November 18th 2024</p>
+        <hr class="subtle_r">
+    </div>
+
+    <div style="padding-top: 0;" class="centered">
+        <h3>Project Outline</h3>
+        <p>This was the final project in our course for Teamwork and Team Building. The goal was to work together as a team to create a functional lego prototype that solved some form of problem. While the project itself was based around building this robot, the real focus was to apply the ideas we'd learned about teamwork to a practical project.</p>
+        <p>We were given approximately 1-2 months to complete the project.</p>
+        <h3>Learning Outcomes</h3>
+        <p>The key takeaway from this project was the importance of scope and communication. Several times during this project it became clear that our initial idea simply wasn't feasible, either due to time constraints or practicality. Being in communication with one another and having set clear goals before hand helped us adjust on the fly. In the end we developed a project that, while not matching our original scope, I think we're all proud of.</p>
+
+        <h3>Group</h3>
+        <p>This was a group project done with a couple of classmates. You can find out more about the group on the gitlab page linked below.</p>
+
+        <p><strong>Tools:</strong> Lego EV3 Mindstorms, Arduino, Visual Studio Code</p>
+        <p><strong>Gitlab: </strong><a href="https://gitlab.stud.idi.ntnu.no/idatt1004-group-18-v2024/prosjektgruppe">Click Here</a></p>
+        <hr>
+        <p>
+            
+        </p>
+        <div class="spacer"></div>
+        <hr>
+        <p>Return: <a href="projects_school.html">School Projects</a></p>
+
+    </div>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
+    <script type="module" src="javascript/main.js"></script>
+    
+    
+</body>
+</html>
