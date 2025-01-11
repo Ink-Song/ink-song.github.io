@@ -1,0 +1,141 @@
+body{
+    width: 100%;
+    font-family: 'IBM Plex Mono';
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    font-size: 0.9em;
+    --primary-text-color: #fecdb2;
+    --primary-background-color: #4d424b;
+    --secondary-background-color: #2b292d;
+    --shadow-color: lighten(var(--secondary-background-color), 10%);
+}
+ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+h1 {
+    font-size: 3em;
+    font-family: 'Inter';
+    text-align: center;
+}
+h3 {
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 1.15em;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: lowercase;
+}
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(208, 116, 54);
+    transition: ease-in;
+    transition-duration: 40ms;
+}
+input {
+    font-family: 'Inter';
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    border: none;
+    margin-left: none;
+    width: 90%;
+    background-color: none;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1em;
+}
+hr {
+    width: 100%;
+    border-color: #ffa07a;
+}
+
+.picture-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 2em;
+    border: solid;
+    border-width: 1px;
+    border-color: #ffa07a;
+    box-shadow: 0px 0px 10px 0px #19181a inset;
+}
+.box {
+    display: flex;
+}
+.quote {
+    font-size: 0.9em;
+    padding-bottom: 5px;
+}
+
+.list-holder {
+    margin-top: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #ffa07a;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 0px #19181a inset;
+    flex-grow: 2;
+    width: 66%;
+}
+
+.main {
+    width: 100%;
+}
+.content {
+    padding-top: 50px;
+    width: 65%;
+    margin: auto;
+}
+.header-bar{
+    width: 33%;
+    flex-shrink: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-bar p{
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.search-bar {
+    border: solid;
+    border-color: #212023;
+    border-width: 2px;
+    border-radius: 2em;
+}
+.category {
+    flex-grow: 0;
+    padding: 20px;
+    max-width: 35%;
+    border-radius: 1em;
+    box-shadow: 0px 0px 7px 0px #19181a;
+    margin: 5px;
+    border: solid;
+    border-color: #4d424b;
+    border-width: 1px 0px 0px;
+}
+#date-time{
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 0;
+    margin-top: 0;
+    padding: 0;
+}
