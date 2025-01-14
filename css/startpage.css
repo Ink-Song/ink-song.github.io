@@ -8,8 +8,8 @@ body{
     --primary-background-color: #4d424b;
     --secondary-background-color: #2b292d;
     --shadow-color: lighten(var(--secondary-background-color), 10%);
-
     --primary-font: 'IBM Plex Mono';
+    margin: 0;
 }
 ul {
     padding: 0;
