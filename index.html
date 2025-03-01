@@ -14,7 +14,6 @@
         href = "css/alt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
@@ -22,48 +21,66 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="content">
-            <div>
-                <p style="font-size: 2em; font-weight: lighter;">Hello</p>
+    <!--
+        <div class="center-text">
+            <p><i>Welcome...</i></p>
+        </div>
+     -->
+    <div>
+        <div class="overlay-content">
+            <div class="header">
+                <p>sasha unruh</p>
+            </div>
+            
+            <div class="intro">
+                <p style="font-size: 2em; font-weight: lighter;">Hi!</p>
                 <p class="main_text">
-                My name is Sasha. I'm a first year Computer Engineering student. You can take a look at some of my projects here, and on my <a href="https://github.com/Ink-Song">github</a>.
+                My name is Sasha. I'm a first year Computer Engineering student and hobby generalist. You can take a look at some of my projects here and on my <a href="https://github.com/Ink-Song">github</a>.
                 </p>
             </div>
-            <div class="main">
-                <h2>Projects</h3>
-                    <hr>
-                    <div class="flex-container"> 
-                        <div class="flex-item">
-                            <a href="/pages/vr_proj_2021-2023.html">  
-                                <p>
-                                    VR Hazard Investigation (2022-2024)
-                                </p>
-                            </a>
-                        </div>
-                        <div class="flex-item">
-                            <a href="/pages/lego_mindstorms.html">  
-                                <p>
-                                    Lego Projects (2024)
-                                </p>
-                            </a>
-                        </div>
-                        <div class="flex-item">
-                            <a href="/pages/progoppgaver.html">  
-                                <p>
-                                    Programming assignments (2024)
-                                </p>
-                            </a>
-                        </div>
-                        <div class="flex-item">
-                            <a href="/pages/blender_projects.html">  
-                                <p>
-                                    Blender Projects
-                                </p>
-                            </a>
-                        </div>
-                        
-                    </div>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop id="vidMeditations">
+                <source src="img/collageImages/MovingMeditationsSubmission.mp4">
+            </video>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="content">
+            <p>You can read more about me on my <a href="pages/about_me.html">here</a>, and more about the projects I've done in school and my spare time in the pages linked below.</p>
+            <h2>Projects</h3>
+            <hr>
+            <div class="flex-container"> 
+                <div class="flex-item">
+                    <a href="/pages/vr_proj_2021-2023.html">  
+                        <p>
+                            VR Hazard Investigation (2022-2024)
+                        </p>
+                    </a>
+                </div>
+                <div class="flex-item">
+                    <a href="/pages/lego_mindstorms.html">  
+                        <p>
+                            Lego Projects (2024)
+                        </p>
+                    </a>
+                </div>
+                <div class="flex-item">
+                    <a href="/pages/progoppgaver.html">  
+                        <p>
+                            Programming assignments (2024)
+                        </p>
+                    </a>
+                </div>
+                <div class="flex-item">
+                    <a href="/pages/blender_projects.html">  
+                        <p>
+                            Blender Projects
+                        </p>
+                    </a>
+                </div>
+                
             </div>
             <div class="footer">
                 <p style="padding-top: 2vh;margin-bottom: 0;">Contact Me Here:</p>
@@ -77,7 +94,7 @@
     
     
     
-    <script>
+    <!-- <script>
         function myFunction() {
           var x = document.getElementById("topnav");
           if (x.className === "navbar") {
@@ -86,7 +103,7 @@
             x.className = "navbar";
           }
         }
-    </script>
+    </script> -->
     
     
 </body>
