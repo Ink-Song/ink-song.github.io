@@ -1,5 +1,5 @@
 body {
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: 'VT323', sans-serif;
     background: #008080;
     margin: 0;
     display: flex;
@@ -10,8 +10,10 @@ body {
 }
 
 .window {
-    width: 300px;
-    height: 300px;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
     background: #C0C0C0;
     border: 2px solid #808080;
     box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
@@ -70,3 +72,31 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+.image-container {
+    display: inline-block;
+    background: #C0C0C0; /* Classic Windows 95 gray */
+    padding: 6px;
+    border: 2px solid #808080;
+    box-shadow: inset -2px -2px #fff, inset 2px 2px #000; /* 3D effect */
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Makes image responsive within the container */
+    height: auto;
+    border: none;
+}
+
+.center-text {
+    text-align: center;
+}
+.ascii-art {
+    font-family: "Courier New", monospace; /* Ensures perfect spacing */
+    white-space: pre; /* Preserves spaces & new lines */
+    font-size: 12px; /* Adjust size to fit your design */
+    text-align: center; /* Centers horizontally */
+    overflow: auto; /* Enables scrolling if needed */
+    background: #C0C0C0;
+}
+
