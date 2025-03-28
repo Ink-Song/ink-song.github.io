@@ -11,7 +11,7 @@ body {
 
 .window {
     width: auto;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     max-height: 600px;
     background: #C0C0C0;
@@ -19,6 +19,7 @@ body {
     box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .title-bar {
