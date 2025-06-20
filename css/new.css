@@ -93,3 +93,23 @@ body {
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
     padding: 2em 0em;
 }
+
+.footer {
+    background-color: var(--primary-dark);
+    margin: 0;
+}
+.footer-main {
+    margin: 0em 10lvw;
+    padding: 2em 0em;
+}
+.footer-main > * {
+    font-family:'IBM Plex Mono', 'Courier New', Courier, monospace;
+    margin: 0em;
+    padding: 0em;
+    color: var(--primary-light);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-main > *:hover{
+    font-weight: bold;
+}
