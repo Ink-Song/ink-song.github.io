@@ -91,7 +91,14 @@ body {
 }
 .user-info-box {
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    color: var(--primary-light);
     padding: 2em 0em;
+    position: relative;
+}
+.corner-icon {
+    position: absolute;
+    top: 2em;
+    right: 0px;
 }
 
 .footer {
@@ -112,4 +119,37 @@ body {
 }
 .footer-main > *:hover{
     font-weight: bold;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 2em;         /* Adjust as needed */
+    left: 10lvw;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin: 0em 0rem;
+    }
+    .info-pair {
+        padding: 0;
+    }
+    
 }
