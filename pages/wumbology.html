@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dear Xander...</title>
+    <title>Wumbology</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
     <link rel="stylesheet" href="/css/windows95.css">
     <script src="javascript/button.js"></script>
@@ -28,18 +28,26 @@
         </div>
             
         </div>
-        <div id="modalThing" class="modal">
+        <dialog id="popup">
+            <div id="modalThing" class="modal">
             <div class="modalContent">
-                <span id="close">&times;</span>
+                
                 <h2>Treasure for you!</h2>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="/img/christmas2025.png" alt="plusone">
+                </div> 
+                
                 <p>This entitles you to +1 game on steam OR one set of warhammer (or dnd) related models of your choosing.*</p>
 
                 <p>*note: any requested products should cost 50 dollars or less.</p>
+                <button id="closeBtn">Close</button>
+                </div>
             </div>
-        </div>
+        </dialog>
+        
     </div>
 
-    <script src="javascript/button.js"></script>
+    <script src="/javascript/button.js"></script>
 
     <div class="taskbar">
         <div class="start-button">Start</div>
