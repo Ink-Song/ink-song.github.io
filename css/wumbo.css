@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background-color: #0e0b08;
+    color: #e6e0d6;
+    background-image: url("dark-texture.jpg"); /* optional */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dos-panel {
+    background: rgba(30, 24, 18, 0.9);
+    border: 1px solid #6e4b2b;
+    box-shadow:
+        inset 0 0 10px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(120, 80, 40, 0.3);
+    padding: 24px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.dos-panel h1,
+.dos-panel h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d6b36a;
+    border-bottom: 1px solid #5a3a1f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dos-panel h1 {
+    font-size: 26px;
+}
+
+.dos-panel h2 {
+    font-size: 20px;
+}
+
+.dos-panel p {
+    line-height: 1.6;
+    color: #dcd3c6;
+    margin-bottom: 16px;
+}
+
+.dos-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(#5a1f1f, #3b1414);
+    color: #f2e5c7;
+    border: 1px solid #a06a3b;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    letter-spacing: 1px;
+    box-shadow:
+        inset 0 0 6px rgba(255, 200, 120, 0.2),
+        0 0 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.dos-button:hover {
+    background: linear-gradient(#7a2a2a, #4d1a1a);
+    color: #fff4dc;
+    cursor: pointer;
+}
+
+.dos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dos-list li {
+    padding: 10px 12px;
+    border-bottom: 1px solid #3d2a1a;
+    transition: background 0.2s ease;
+}
+
+.dos-list li:hover {
+    background: rgba(255, 200, 120, 0.05);
+}
+
+.dos-divider {
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #8a5a2d,
+        transparent
+    );
+    margin: 24px 0;
+}
+
+.stats {
+    color: #137bc0;
+}
+hr {
+    border-color: #58391d;
+}
+.subtle {
+    color: grey;
+    font-style: italic;
+    font-size: small;
+}
+
+strong {
+    color: gold;
+    text-shadow: 0px 0px 5px  rgb(244, 200, 125);
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  background: transparent;
+}
+
+/* Style the background overlay */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(4px);    /* Optional: Blur the background content */
+}

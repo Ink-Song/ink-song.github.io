@@ -5,53 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wumbology</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
-    <link rel="stylesheet" href="/css/windows95.css">
+    <link rel="stylesheet" href="/css/wumbo.css">
     <script src="javascript/button.js"></script>
 </head>
 <body>
 
-    <div class="window">
-        <div class="title-bar">
-            <span>You've got mail!</span>
-            <div class="buttons">
-                <div class="button">✖</div>
-            </div>
-        </div>
+    <div class="dos-panel">
         <div class="content">
             <h2>Congratulations!</h2>
-            <p>You've recieved a (gift)!<br>Please press the button below to recieve your prize!</p>
+            <p>You've recieved a <strong>gift</strong> !<br>This is a legendary item. In order to retrieve it, press the button below, and send a screenshot of the page to the gift sender. If you are given further prompts, do your best to read through them and fill them out accordingly. <br> <br>Merry Christmas!</p>
             <hr>
 
             <div style="display: flex; align-items: center; justify-content: center;">
-                <button id="openButton">Press me!</button>
+                <button id="openButton" class="dos-button">Press me!</button>
             </div>  
         </div>
             
         </div>
         <dialog id="popup">
-            <div id="modalThing" class="modal">
-            <div class="modalContent">
+            <div id="modalThing" class="dos-panel">
+            <div class="none">
                 
-                <h2>Treasure for you!</h2>
+                <h2 class="glow">New Game Coin</h2>
                 <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="/img/christmas2025.png" alt="plusone">
+                    <img src="/img/christmas2025.png" alt="plusone" class="glow">
                 </div> 
-                
-                <p>This entitles you to +1 game on steam OR one set of warhammer (or dnd) related models of your choosing.*</p>
+                <p>When unlocking the item, you can choose <strong>one</strong> of the following effects*: </p>
+                <hr>
+                <ul class="stats">
+                    <li>+1 Game on Steam</li>
+                    <li>+1 Set of Warhammer Miniatures</li>
+                    <li>+1 Set of Warhammer Paints**</li>
+                </ul>
 
-                <p>*note: any requested products should cost 50 dollars or less.</p>
-                <button id="closeBtn">Close</button>
+                <hr>
+                <p class="subtle">*note: any requested products should cost 50 dollars or less. <br>
+                **note: paints worth up to 50 dollars total
+                </p>
+                <button id="closeBtn" class="dos-button">Close</button>
                 </div>
+
             </div>
         </dialog>
         
     </div>
 
     <script src="/javascript/button.js"></script>
-
-    <div class="taskbar">
-        <div class="start-button">Start</div>
-    </div>
 
 </body>
 </html>
